@@ -20,6 +20,23 @@ The original source specifically calls out `.env`, `.git/`, `.DS_Store`, `.vscod
 
 ---
 
+## Main Domain vs Subdomains
+
+Check both the main domain and subdomains.
+
+Exposed development files are often found on forgotten environments rather than the primary production site.
+
+Examples:
+
+```txt
+example.com              → clean production site
+staging.example.com      → exposed .env file
+dev.example.com          → exposed .git directory
+old.example.com          → exposed .vscode settings
+qa.example.com           → exposed .idea project files
+```
+---
+
 ## Why This Matters
 
 These files are dangerous because they often reveal information developers never intended to ship.
