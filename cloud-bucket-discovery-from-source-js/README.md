@@ -18,6 +18,24 @@ The source article specifically recommends looking inside page source, JavaScrip
 
 ---
 
+## Main Domain vs Subdomains
+
+Check both the root domain and subdomains.
+
+Cloud bucket references are often environment-specific. The main marketing site may only expose public asset buckets, while subdomains may reveal upload buckets, staging buckets, document storage, CDN origins, or old backup locations.
+
+Examples:
+
+```txt
+example.com                  → public images/CSS/JS
+app.example.com              → user-upload storage
+admin.example.com            → internal documents
+staging.example.com          → old backups or test buckets
+support.example.com          → attachments and screenshots
+cdn.example.com              → CDN or CloudFront origin clues
+```
+---
+
 ## Why This Matters
 
 A bucket reference in JavaScript can lead to:
