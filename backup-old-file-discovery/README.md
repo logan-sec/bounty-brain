@@ -20,6 +20,20 @@ This technique is high signal when you generate backup variations from files tha
 
 ---
 
+## Main Domain vs Subdomains
+
+Check backup and old files across both the main domain and subdomains.
+
+However, avoid blindly running huge backup wordlists against every host. The highest-signal method is to first discover real files on each subdomain, then generate backup variants from those files.
+
+Example:
+
+```txt
+app.example.com/static/js/config.js
+```
+
+---
+
 ## Why This Matters
 
 Backup files may contain:
