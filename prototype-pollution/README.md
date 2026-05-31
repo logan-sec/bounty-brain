@@ -1,4 +1,4 @@
-# Prototype Pollution — Bug Bounty Cheatsheet
+# Prototype Pollution | Bug Bounty Cheatsheet
 
 > **Category:** Client-Side / JavaScript  
 > **Impact:** Auth bypass, privilege escalation, RCE (via gadget chains)  
